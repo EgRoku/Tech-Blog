@@ -1,0 +1,22 @@
+[
+    {
+      "title": "Testing Testing",
+      "content": "This is not a drill.",
+      "creator": "egroku"
+    },
+    {
+      "title": "MVC Cheese",
+      "content": "Learning some stuff about MVC, with a side of gouda.",
+      "creator": "egroku"
+    },
+    {
+      "title": "Front End Schenanigans",
+      "content": "I like front end stuff, making things look pretty is nice",
+      "creator": "borge"
+    },
+    {
+        "title":"Computer Science",
+        "content": "Learning some computer science stuff, pretty interesting and wondering how much of an actual impact it'll have",
+        "creator": "borge"
+    }
+  ]
