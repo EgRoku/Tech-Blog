@@ -1,6 +1,6 @@
 {
   "name": "blogmvc",
-  "description": "![Github license](https://img.shields.io/badge/license-MIT-blue.svg)\r   ## Table Of Contents\r   * [Description](#description)\r   * [Dependencies](#dependencies)\r   * [Screen-Shot](#screen-shot)\r   * [Video](#video)\r   * [Usage](#usage)\r   * [Github-Contributors](#github-contributors)\r   * [License](#license)",
+  "description": "",
   "version": "1.0.0",
   "main": "server.js",
   "devDependencies": {},
