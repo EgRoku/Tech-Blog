@@ -36,7 +36,7 @@ router.get('/dashboard', async (req, res) => {
   try {
     const dbUserPostData = await Post.findAll({
       where: {
-        creator: req.session.username, // can't figure out getting username rn will edit later
+        creator: req.session.username, 
       },
       include: [
         {

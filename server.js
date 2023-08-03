@@ -40,7 +40,7 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
@@ -66,9 +66,5 @@ app.use((req, res, next) => {
 });
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () =>
-    console.log(
-      `\nServer running on port ${PORT}. Visit http://localhost:${PORT} and create an account!`
-    )
-  );
+  app.listen(PORT, () => console.log(`Now listening ${PORT}`));
 });

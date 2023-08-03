@@ -25,7 +25,7 @@ Pressing Home or the Tech Spot logo from Dashboard will lead them back to see an
 
 At the bottom of the page, users can set their choice between Light Mode and Dark Mode, with their preference being saved in local storage.
 
-LIVE: https://dagobah-depot-34081fe1df5e.herokuapp.com/ 
+LIVE SITE:  
 
   ## Dependencies
   dotenv, express, mysql2, Sequelize, express-handlebars, connection-session-sequelize, expresss-session, Stripe, bcrypt. 
