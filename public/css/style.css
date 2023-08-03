@@ -1,0 +1,126 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  text-decoration: underline;
+}
+
+/*  */
+
+.dark {
+  --main-background: #121212;
+  --main-font: white;
+    color: white;
+}
+
+.light {
+  --main-background: white;
+  --main-font: #121212;
+}
+
+body {
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.K2-grid li {
+  background: var(--main-background);
+  color: var(--main-font);
+}
+.K2-grid li a {
+  background: var(--main-background);
+  color: var(--main-font);
+}
+.K2-grid li span {
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.toggle-switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.toggle-switch p {
+  padding: 1em;
+}
+
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  width: 100%;
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.level-item {
+  gap: 5px;
+}
+
+.comment-box {
+  width: 75%;
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.post-btn {
+  float: right;
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.divider {
+  border-left: 3px solid #627264;
+  height: 200px;
+}
+
+.login-txt {
+  padding-left: 8px;
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.login-button {
+  margin-left: 8px;
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.link-button {
+	background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background: var(--main-background);
+  color: var(--main-font);
+}
+
+.color-swap {
+  background: var(--main-background);
+  color: var(--main-font);
+}

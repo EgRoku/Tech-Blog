@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Spot</title>
+  <link rel="stylesheet" href="/css/bulma.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/slider.css">
+  <link rel="stylesheet" href="/css/reset.css">
+</head>
+<body class="is-flex-direction-column light">
+  <header class="is-flex is-full">
+    <nav class="navbar is-full is-flex-direction-row is-justify-content-space-around is-align-items-center" role="navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <h1 class="color-swap is-size-3">Tech Spot</h1>
+        </a>
+      </div>
+      <div id="myTopNav" class="nav">
+        <div class="navbar-end">
+          <a class="color-swap navbar-item is-size-5" href="/">Home</a>
+          <a class="color-swap navbar-item is-size-5" href="/dashboard">Dashboard</a>
+          {{#if loggedIn}}
+          <a class="navbar-item is-size-5">
+            <form method="post" action="/logout" class="inline">
+              <button type="submit" class="color-swap link-button">Logout</button>
+            </form>
+          </a>
+          {{else}}
+          <a class="color-swap navbar-item is-size-5" href="/login">Login</a>
+          {{/if}}
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="is-flex is-flex-direction-column pt-5 column ">
+    {{{body}}}
+  </main>
+  <footer>
+    <div class="toggle-switch">
+        <p>Night</p>
+        <span>
+            <label class="switch">
+                <input id="theme-switch" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </span>
+        <p>Day</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script type="nomodule" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="/js/darkmode.js"></script>
+  <script src="/js/navbar.js"></script>
+</body>
+</html>
