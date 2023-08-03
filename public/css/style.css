@@ -27,8 +27,7 @@ header, .project:not(:last-child) {
 
 .dark {
   --main-background: #121212;
-  --main-font: white;
-    color: white;
+  --main-font: rgb(163, 158, 158);
 }
 
 .light {

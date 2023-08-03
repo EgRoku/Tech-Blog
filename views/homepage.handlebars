@@ -1,12 +1,12 @@
 {{#each posts as |post|}}
-<div class="box">
+<div class="color-swap box">
   <article class="media">
     <div class="media-content">
       <div class="content">
-        <p>
-          <strong>{{post.creator}}</strong> <small>{{post.date_created}}</small>
+        <p class="color-swap">
+          <strong class="color-swap">{{post.creator}}</strong> <small class="color-swap">{{post.date_created}}</small>
           <br>
-          <strong>{{post.title}}</strong>
+          <strong class="color-swap">{{post.title}}</strong>
           <br>
           {{post.content}}
         </p>
