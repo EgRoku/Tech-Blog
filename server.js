@@ -62,6 +62,10 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/main.handlebars'))
+);
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Now listening ${PORT}`));
 });
