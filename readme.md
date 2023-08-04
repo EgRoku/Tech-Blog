@@ -1,11 +1,12 @@
 ## Tech Spot
+
   ![Github license](https://img.shields.io/badge/license-MIT-blue.svg)
+  
   ## Table Of Contents
   * [Description](#description)
+  * [Usage](#usage)
   * [Dependencies](#dependencies)
   * [Screen-Shot](#screen-shot)
-  * [Video](#video)
-  * [Usage](#usage)
   * [Github-Contributors](#github-contributors)
   * [License](#license)
 
@@ -13,6 +14,7 @@
   ## Description
  Tech Spot is an app for users to share ideas, instructions, tech knowledge, or
  generally anything wirth posting! Users can Post, read others posts, all in an easy to navigate and read format.
+
   ## Usage
 Users are met with the Home page where they are able to read posted blog posts, however
 if they would like to comment or make their own post, they must first login or sign up.
@@ -25,18 +27,18 @@ Pressing Home or the Tech Spot logo from Dashboard will lead them back to see an
 
 At the bottom of the page, users can set their choice between Light Mode and Dark Mode, with their preference being saved in local storage.
 
-LIVE SITE:  
+LIVE SITE:  https://tech-spot-app-b7a85ed7734a.herokuapp.com
 
   ## Dependencies
   dotenv, express, mysql2, Sequelize, express-handlebars, connection-session-sequelize, expresss-session, Stripe, bcrypt. 
  
   ## Screen-Shot
 
-
+![Screenshot (118)](https://github.com/EgRoku/Tech-Blog/assets/125640560/f2e967d5-331f-48ab-bfea-1b3604f6bfad)
 
   ## My Github
    * Github - [EgRoku](https://github.com/EgRoku)
    
   ## License
-      
+
       Licensed under the MIT license
