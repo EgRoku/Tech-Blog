@@ -1,14 +1,13 @@
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const methodOverride = require('method-override'); // for handling PUT requests
 // Initializes Sequelize with session store
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
+// const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
-
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
 
@@ -38,11 +37,9 @@ const hbs = exphbs.create();
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.use(routes);
 
 // middleware for checking if session has expired
@@ -66,9 +63,5 @@ app.use((req, res, next) => {
 });
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () =>
-    console.log(
-      `\nServer running on port ${PORT}. Visit http://localhost:${PORT} and create an account!`
-    )
-  );
+  app.listen(PORT, () => console.log(`Now listening ${PORT}`));
 });
